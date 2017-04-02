@@ -1,0 +1,54 @@
+body {
+  background-color:#DCDCDC;
+}
+
+img {
+  border: 2px Solid black;
+  
+}
+th {
+  background-color: E0FFFF;
+  color: Dark Brown;
+}
+
+.country{
+  color: #4B0082;
+}
+
+.robotname {
+  text-align: center;
+}
+.Kiva {
+  img-align: top;
+}
+a {
+  color: Red;
+}
+
+table li {
+  color:green;
+  font-family:Helvetica;
+  text-align: left;
+}
+h1 {
+  text-align:center;
+  color:Blue;  
+}
+
+table {
+  border-collapse: collapse;
+}
+table, td, th {
+  border: 2px solid black;
+}
+p1 {
+  color:green;
+  text-align: center;
+}
+.Examples {
+  color:Blue;
+  text-align: left;
+}
+.Facts {
+  color:Blue;
+}
