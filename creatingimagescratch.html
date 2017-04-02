@@ -1,0 +1,59 @@
+<h1> Creating an image from Scratch</h1>
+
+<h3> Image created</h3>
+
+<p> 
+  Here is the image I created.
+</p>
+
+ <img src="http://res.cloudinary.com/dkeognc2i/image/upload/v1444250881/assignone_iqudjn.png"width="256">
+
+<h3>
+  Here is the code used to create this image:
+</h3>
+
+<pre>
+function dist(pixel, x, y) {
+    var dx = pixel.getX() - x;
+    var dy = pixel.getY() - y;
+    return Math.sqrt(dx * dx + dy * dy);
+}
+//start with a blank image
+var  output = new SimpleImage(256,256);
+
+//Make something here!
+for (var pixel of output.values()) {
+    if (dist(pixel, 100,100) < 50){
+        pixel.setBlue(255-4*dist(pixel, 100, 100));
+        
+    }
+    if (dist(pixel, 200,250) < 2000){
+        pixel.setGreen(255-4*dist(pixel, 100, 100));
+    }
+    if (dist(pixel, 10,10) < 90){
+        pixel.setRed(255-3*dist(pixel, 100, 100));
+    }
+    else if (dist(pixel, 220,220) < 90){
+        pixel.setBlue(255-3*dist(pixel, 100, 200));
+        pixel.setGreen(255-4*dist(pixel, 200, 200));
+    }
+    else if (Math.random() > 0.995) {
+        pixel.setRed(22);
+        pixel.setGreen(225);
+    }
+  
+}
+//print whatever you made
+print(output);
+</pre>
+
+<h3>
+  Explanation
+</h3>
+
+<p>
+  I used a similar example, but instead blurred them at different intervals and moved the spheres around.
+</p>
+<h4>
+  ====================================================================
+</h4>
